@@ -1,0 +1,11 @@
+GCHelper
+
+GCHelper is a class that easily facilitates and wraps the actions of the Turn-Based Gaming APIs, and Game Center player authentication.
+
+GCHelper is a singleton, and therefore only one will ever be created.  It also means that it can be accessed from anywhere that imports its header.
+
+To authenticate a user, call:
+
+[[GCHelper sharedInstance] authenticateLocalUser];
+
+Implement the GCHelperDelegate in order to receive information and notifications about the turn-based matchmaking and gaming.
